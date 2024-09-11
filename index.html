@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <title>index</title>
+   </head>
+   <body> 
+    <ul>
+    <li>
+        <a href = "http://kubsu.ru/">сайтик кубика<3</a>  <!--1-->
+    </li>
+    <li>
+        <a href = "https://kubsu.ru/">сайтик кубика второй раз<3</a> <!--2-->
+    </li>
+    <li>
+        <a href = "https://animego.org/?ysclid=m0smdmjy15880493798"><img src = "https://i.pinimg.com/564x/1c/48/96/1c48964443de7c72e234b01fd0aadc3f.jpg" width = "200" heigth = "200" alt = ""/></a>  <!--3-->
+    </li>
+    <li>
+        <a href = "bruh/internal_page.html"> ссылочка на внутреннюю страничку<3</a> <!--4(сама внутренняя в internal_page)-->
+    </li>
+    <li>
+        <a href = "index.html">ссылочка на главную страничку<3</a> <!--5-->
+    </li>
+    <li>
+        <a href = "#what">фрагментик </a>  <!--6-->
+    </li>
+    <li>
+        <a href = "https://animego.org/?ysclid=m0v8xxcz9u853952994&1=chto&2=kto">классный сайт и ссылка с тремя параметрами!</a>  <!--7-->
+    </li>
+    <li>
+        <a href = "https://www.youtube.com/watch?id=1234567">айдишник в помощь</a>  <!--8-->
+    </li>
+    <li>
+        <a href = "index.html">текущий каталог ._.</a>  <!--9-->
+    </li>
+    <li>
+        <a href = "about/chto-to.html">каталог about</a>  <!--10-->
+    </li>
+    <li>
+        <a href = "../about.chto-to.html">уровнем выше!</a>  <!--11-->
+    </li>
+    <li>
+        <a href = "../../about/chto-to.html">двумя уровнями выше!!</a>  <!--12-->
+    </li>
+    <li>
+        классные <a href = "https://ru.pinterest.com">картинки</a> тут!!!  <!--13-->
+    </li>
+    <li>
+        <a href = "https://ru.wikipedia.org/wiki/My_Chemical_Romance#История">история любимой группы<3</a>  <!--14-->
+    </li>
+    <li>
+        <img src = "https://i.pinimg.com/736x/bf/c7/2f/bfc72f7aac6c0290de0ddb30363de0f3.jpg" width = "300" height = "300" alt = "" usemap = "#what">
+        <map name = "what">
+            <area shape = "rect" coords = "50,50,150,150" href = "index.html" alt = "первая ссылка">
+            <area shape = "circle" coords = "200,200,70" href = "index.html" alt = "вторая ссылка">  <!--15-->
+        </map>
+    </li>
+    <li>
+        <a href = "">пусто...</a> <!--16-->
+    </li>
+    <li>
+        <a href = "index.html" onclick = "return false">ваще нет href....</a>  <!--17-->
+    </li>
+    <li>
+        <a href = "index.html" rel = "nofollow" target="_blank">низя переход</a>  <!--18-->
+    </li>
+    <li>
+        <!--noindex-->
+        <a href = "index.html">низя индексацию</a>  <!--19-->
+        <!--/noindex-->
+    </li>
+    </ul>
+    <ol type = "a">
+        <li>
+            <a href = "https://www.wildberries.ru/">вбшка</a>
+        </li>                                                        <!--20-->
+        <li>
+            <a href = "https://www.ozon.ru/">озончик</a>
+        </li>
+    </ol>
+    <ul>
+        <li>
+            <h3> <a href = "ftp://user:trash@koshmar.com/one/two.txt">жоский ftp</a> </h3>  <!--21-->
+       </li>
+    </ul>
+    <form>
+        <p>
+            <label>ФОРМА</label>
+        </p>
+        <p>
+            <input type = "text" name = "name" placeholder="ваше фио!" size = "35">  <!--1-->
+        </p>
+        <p>
+            <input type = "tel" name = "phone" placeholder="ваш телефон!" size = "35">  <!--2-->
+        </p>
+        <p>
+            <input type = "email" name = "email" placeholder="ваша почта!" size = "35">  <!--3-->
+        </p>
+        <p>
+            <label>когда родились?</label>
+        </p>
+        <p>
+            <input type="date" value="2005-02-07">  <!--4-->
+        </p>
+        <p>
+            <label>выберите свой пол</label>
+        </p>
+        <p>
+            <input type = "radio" name = "sex" value = "male">
+            <label>муж</label>                                          <!--5-->
+            <input type = "radio" name = "sex" value = "famale">
+            <label>жен</label>
+        </p>
+        <p>
+            <label>а какой любимый яп,м? </label>
+            <br>
+            <select name="language" multiple="multiple">
+               <option value="1">pascal</option>
+               <option value="2">c</option>
+               <option value="3">c++</option>
+               <option value="4">javascript</option>
+               <option value="5">php</option>                   <!--6-->
+               <option value="6">python</option>
+               <option value="7">java</option>
+               <option value="8">haskel</option>
+               <option value="9">clojure</option>
+               <option value="10">prolog</option>
+               <option value="11">scala</option>
+             </select>
+        </p>
+        <p>
+            <label> 
+               биография
+               <br>
+               <textarea name = "letters">расскажите о себе!</textarea>   <!--7-->
+            </label>
+        </p>
+        <p>
+            <input type="checkbox" checked="checked" name="mur">   <!--8-->
+            с контрактом ознакомлен(а)
+        </p>
+        <p>
+            <button type="submit" value="сохранить">сохранить </button>    <!--9-->
+        </p>
+    </form>
+   </body>
