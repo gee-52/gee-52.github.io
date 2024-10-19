@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>index5</title>
+  </head>  
+  <style>
+    .hide{
+        
+        display:none;
+    }
+  </style>
+  <body style = "width: 100%;display:flex;align-items: center;justify-content: center; background-color: rgb(114, 56, 56);">
+    <form id = "form" style = "width: auto; padding: 10px; text-align: center; background-color: rgb(69, 26, 26);">
+        <h1>супер мега крутой калькулятор(постоянно пользуюсь)</h1>
+        <h3>скоко товаров берете?</h3>
+        <div style = "margin: 20px 0;text-align: center;">
+            <input type = "text" id = "amount" placeholder="введите колво!">
+        </div>
+        <div style = "margin: 20px 0;text-align: center;">
+            <h3>а чо хотите купить?</h3>
+            <div>
+                <label>
+                    <input type = "radio" name = "knopki" id = "knopka1" price = "3000"> рубашки
+                </label>
+                <label>
+                    <input type = "radio" name = "knopki" id = "knopka2">штанишки
+                </label>
+                <label>
+                    <input type = "radio" name = "knopki" id = "knopka3">украшения
+                </label>
+            </div>
+            <div id = "sel" class = "sel hide">
+                <select id = "zakazik" name = "zakazik" title = "shtani">
+                    <option price = "3000">вельветовые штаны по 3000руб</option>
+                    <option price = "2500">базовые штанцы по 2500руб</option>
+                    <option price = "4000">джинсыы по 4000руб</option>
+                </select>
+            </div>
+            <div id = "boxik" class = "boxik hide">
+                    <label>
+                        <input type = "checkbox" name = "galochki" id = "gl1" price = "500">крутые сережки
+                    </label>
+                    <label>
+                        <input type = "checkbox" name = "galochki" id = "gl2" price = "300">бабашкино кольцо
+                    </label>
+                    <label>
+                        <input type = "checkbox" name = "galochki" id = "gl3" price = "100000">браслет картье
+                    </label>
+            </div>
+        </div>
+        <div style = "margin: 20px 0; text-align: center;">
+            <h3>ну и сколько же вы мне должны деняг?</h3>
+        </div>
+        <h3><div id = "result">вот столько:</div></h3>
+    </form>
+    <script src = "6.js" defer></script>
+  </body>
+</html>
