@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(197, 126, 186);
+    color:rgb(121, 47, 48);
+}
+.content {
+    margin:0 auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 1500px;
+    box-sizing: border-box;
+}
+.slick-slide .image {
+    padding: 10px;
+    margin:0 auto;
+}
+.slick-slide img {
+    width:25vw;
+    height: 25vw;
+    margin:0 auto;
+  }
+.slick-slide img.slick-loading {
+    border: 0;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    color: #5c0411;
+    font-size: 30px;
+}
+
+.slick-dots
+{
+    margin: 0 20px;
+    color: #8b572c;
+}
+
+h2
+{
+    text-align:center;
+}
