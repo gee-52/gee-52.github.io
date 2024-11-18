@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Обновленная версия jQuery -->
+  <script>
+    $(function(){
+        $(".ajaxForm").submit(function(e){
+            e.preventDefault();
+            var href = $(this).attr("action");
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: href,
+                data: $(this).serialize(),
+                success: function(response){
+                    if(response.status == "success"){
+                        alert("Мы получили вашу заявку, спасибо!");
+                    }else{
+                        alert("Произошла ошибка: " + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert("Произошла ошибка при отправке: " + error);
+                }
+            });
+        });
+    });
+  </script>
+  <title>index8</title>
+</head>
+<body>
+    <form class="ajaxForm" action="https://formcarry.com/s/uQMyb-hXVqE" method="POST">
+        <input type="text" name="fullName" id="fullName" placeholder="ФИО" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+        <input type="text" name="organization" id="organization" placeholder="Организация" required>
+        <textarea name="message" id="message" placeholder="Сообщение" required></textarea>
+        <label for="agree">
+            <input type="checkbox" id="agree" required> Согласие с политикой обработки персональных данных
+        </label>
+        <button type="submit" id="sendFeedback">Отправить</button>
+    </form>
+</body>
+</html>
