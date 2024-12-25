@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+  font-family:"Montserrat",sans-serif;
+  line-height: 1.0;
+  font-weight:bold;
+  background-color: #242424;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  background: #000000;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  position: relative;
+}
+
+header a{
+  color: #553e3e;
+}
+
+button {
+  background-color: #000000;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative; 
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  height: 8px; 
+  border-bottom: 2px solid #ae9e9e;
+  border-top: 2px solid #ae9e9e;
+}
+
+button::before, button::after {
+  content: "";
+  display:block;
+  width: 20px;
+  height: 30px;
+  background-color: #ae9e9e;
+}
+
+
+.navbar {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: calc(100% + 5px);
+  width: 180px;
+  box-shadow: 0 16px 20px 2px rgba(0, 0, 0, 0.14);
+  border: 1px solid #000000;
+  left:5px;
+}
+.navbar ul li{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.show-menu {
+  display: block;
+}
+
+@media (min-width: 480px) {
+  header {
+    position: static;
+    padding: 2rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  button {
+    display: none;
+  }
+  .navbar {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    border: 0px;
+    box-shadow: none;
+  }
+  .navbar ul {
+    display:flex;
+    flex-direction: row;
+  }
+  .navbar ul li {
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .active {
+    color: #ae9e9e;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 4px;
+    text-underline-position: under;
+  }
+}
